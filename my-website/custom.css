@@ -1,0 +1,59 @@
+.my-bg-photo,
+html {
+  background: url('images/mosq.jpg') no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+
+.my-bg-photo * {
+  position: relative;
+  z-index: 10;
+}
+
+.my-bg-photo:before {
+  content: " ";
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #000;
+  opacity: .65;
+}
+
+.my-custom-container {
+  max-width: 800px;
+  background-color: rgb(235, 243, 247);
+}
+
+.accordion .btn-link:focus {
+  box-shadow: none;
+  background-color: rgb(235, 243, 247);
+}
+.my-drawing {
+  transition: all .33s ease-out;
+}
+
+.my-drawing:hover {
+  transform: scale(1.054) rotate(15deg);
+}
+.card {
+  background-color: rgb(235, 243, 247);
+}
+.text-right {
+  text-align: left!important;
+}
+a {
+  text-decoration: none;
+}
+.pl-5{
+  padding-left: 7rem!important;
+}
+@media screen and (max-width:580px) {
+  .mt-0 {
+    padding-left: 110px;
+    width: 100%;
+  }
+}
